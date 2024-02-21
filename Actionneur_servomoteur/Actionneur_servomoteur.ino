@@ -28,7 +28,7 @@ void setup() {
 void loop() {
 
   activate_ventilation();
-  delay(4000);
+  delay(11000);
 
   /*
   for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
@@ -46,7 +46,14 @@ void loop() {
 
 void activate_ventilation()
 {
-  digitalWrite(Ventilator, HIGH);
+    digitalWrite(Ventilator, HIGH);
+  for (pos = 60; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    myservo_droit.write(pos);              // tell servo to go to position in variable 'pos'
+    myservo_gauche.write(90-pos);
+    delay(30);                       // waits 15 ms for the servo to reach the position
+  }
+  delay(15000);
+  digitalWrite(Ventilator, LOW);
   for (pos = 0; pos <= 60; pos += 1) { // goes from 0 degrees to 180 degrees
     // in steps of 1 degree
     myservo_droit.write(pos);              // tell servo to go to position in variable 'pos'
@@ -54,10 +61,4 @@ void activate_ventilation()
     delay(30);                       // waits 15 ms for the servo to reach the position
   }
   delay(4000);
-  digitalWrite(Ventilator, LOW);
-  for (pos = 60; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-    myservo_droit.write(pos);              // tell servo to go to position in variable 'pos'
-    myservo_gauche.write(90-pos);
-    delay(30);                       // waits 15 ms for the servo to reach the position
-  }
 }
