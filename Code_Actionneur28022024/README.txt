@@ -1,1 +1,2 @@
 Cette partie sert à faire fonctionner les actionneurs de notre Serre Connecté. Elle contient un fichier ino pour l'application Arduino.
+![Cover](https://github.com/EminFr/Serre_Connecte/Code_Actionneur28022024/img/Montage Serre face.jpg)
