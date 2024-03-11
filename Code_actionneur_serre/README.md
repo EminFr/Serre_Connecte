@@ -2,11 +2,11 @@ Cette partie sert à faire fonctionner les actionneurs de notre Serre Connecté.
 
 Face avant de la serre
 
-![Serre Face](img/Montage_Serre_face.jpg)
+![Serre Face](images/Montage_Serre_face.jpg)
 
 Le côté de la serre
 
-![Serre Face](img/Montage_Serre_cote.jpg)
+![Serre Face](images/Montage_Serre_cote.jpg)
 
 
 Explication du fonctionnement de la maquette.
