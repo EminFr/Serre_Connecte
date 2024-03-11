@@ -4,6 +4,6 @@ Face avant de la serre
 
 ![Serre Face](img/Montage_Serre_face.jpg)
 
-Côté de la serre
+Le côté de la serre
 
 ![Serre Face](img/Montage_Serre_cote.jpg)
