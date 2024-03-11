@@ -7,9 +7,9 @@
 
 #include <Servo.h>
 
-Servo myservo_droit;  // create servo object to control a servo
+Servo myservo_droit;  // Création d'un objet servo pour le controle
 Servo myservo_gauche;  // En regardant devant l'ouverture 
-#define Ventilator 2
+#define Ventilator 2 
 #define Pompe 3
 
 
@@ -31,7 +31,7 @@ void loop() {
     int choix_action = Serial.read();
     if(choix_action == '1')
     {
-      activate_ventilation(20);
+      activate_ventilation(20);           // Choix de l'action en fonction de la variable choix_action
     }
     else if(choix_action == '2')
     {
